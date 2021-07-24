@@ -5221,6 +5221,13 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
+lru-cache@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/lru-cache/download/lru-cache-6.0.0.tgz?cache=0&sync_timestamp=1594427606170&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flru-cache%2Fdownload%2Flru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
+  integrity sha1-bW/mVw69lqr5D8rR2vo7JWbbOpQ=
+  dependencies:
+    yallist "^4.0.0"
+
 make-dir@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/make-dir/download/make-dir-2.1.0.tgz?cache=0&sync_timestamp=1587567407163&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmake-dir%2Fdownload%2Fmake-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
@@ -7043,6 +7050,13 @@ semver@^6.0.0, semver@^6.1.0, semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
   resolved "https://registry.npm.taobao.org/semver/download/semver-6.3.0.tgz?cache=0&sync_timestamp=1616463550093&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0=
 
+semver@^7.3.2:
+  version "7.3.5"
+  resolved "https://registry.npm.taobao.org/semver/download/semver-7.3.5.tgz?cache=0&sync_timestamp=1616463550093&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-7.3.5.tgz#0b621c879348d8998e4b0e4be94b3f12e6018ef7"
+  integrity sha1-C2Ich5NI2JmOSw5L6Us/EuYBjvc=
+  dependencies:
+    lru-cache "^6.0.0"
+
 send@0.17.1:
   version "0.17.1"
   resolved "https://registry.npm.taobao.org/send/download/send-0.17.1.tgz#c1d8b059f7900f7466dd4938bdc44e11ddb376c8"
@@ -7170,6 +7184,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+single-spa-vue@^2.1.0:
+  version "2.4.2"
+  resolved "https://registry.nlark.com/single-spa-vue/download/single-spa-vue-2.4.2.tgz#6d009b1470c0079dc1525f010eeddbdaf5b120c2"
+  integrity sha1-bQCbFHDAB53BUl8BDu3b2vWxIMI=
 
 slash@^1.0.0:
   version "1.0.0"
@@ -7392,6 +7411,11 @@ stackframe@^1.1.1:
   resolved "https://registry.npm.taobao.org/stackframe/download/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
   integrity sha1-UkKUktY8YuuYmATBFVLj0i53kwM=
 
+standalone-single-spa-webpack-plugin@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.nlark.com/standalone-single-spa-webpack-plugin/download/standalone-single-spa-webpack-plugin-1.2.2.tgz#cae12845d6021351dbe40a2c25fe51644ceaaa4d"
+  integrity sha1-yuEoRdYCE1Hb5AosJf5RZEzqqk0=
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/static-extend/download/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -7599,6 +7623,11 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+systemjs-webpack-interop@^2.3.1:
+  version "2.3.7"
+  resolved "https://registry.nlark.com/systemjs-webpack-interop/download/systemjs-webpack-interop-2.3.7.tgz#b8ed2a81c371bab3160ac4801776ef61cf8c7959"
+  integrity sha1-uO0qgcNxurMWCsSAF3bvYc+MeVk=
 
 table@^5.2.3:
   version "5.4.6"
@@ -8069,6 +8098,15 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
+
+vue-cli-plugin-single-spa@~2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npm.taobao.org/vue-cli-plugin-single-spa/download/vue-cli-plugin-single-spa-2.2.0.tgz#19154ef5cd698b3893bb12f1b0b57ca9418f17e3"
+  integrity sha1-GRVO9c1piziTuxLxsLV8qUGPF+M=
+  dependencies:
+    semver "^7.3.2"
+    standalone-single-spa-webpack-plugin "^1.2.0"
+    systemjs-webpack-interop "^2.3.1"
 
 vue-eslint-parser@^7.0.0:
   version "7.9.0"
