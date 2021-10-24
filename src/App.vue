@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-list />
+    <nav-list :eventBus="eventBus"/>
   </div>
 </template>
 
@@ -9,13 +9,10 @@ import NavList from "./components/NavList";
 
 export default {
   name: 'App',
-  props: ["myPet"],
+  props: ["eventBus"],
   components: {
     NavList
   },
-  created() {
-    console.log(this.myPet)
-  }
 }
 </script>
 
