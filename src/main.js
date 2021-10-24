@@ -11,6 +11,7 @@ const vueLifecycles = singleSpaVue({
     render(h) {
       return h(App, {
         props: {
+          myPet: this.myPet,
           // single-spa props are available on the "this" object. Forward them to your component as needed.
           // https://single-spa.js.org/docs/building-applications#lifecyle-props
           // if you uncomment these, remember to add matching prop definitions for them in your App.vue file.
@@ -26,5 +27,5 @@ const vueLifecycles = singleSpaVue({
 });
 
 export const bootstrap = vueLifecycles.bootstrap;
-export const mount = vueLifecycles.mount;
+export const mount = (props) => vueLifecycles.mount(props);
 export const unmount = vueLifecycles.unmount;

@@ -9,8 +9,12 @@ import NavList from "./components/NavList";
 
 export default {
   name: 'App',
+  props: ["myPet"],
   components: {
     NavList
+  },
+  created() {
+    console.log(this.myPet)
   }
 }
 </script>
